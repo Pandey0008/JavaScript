@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ul = document.getElementsByClassName('days');
+        console.log(ul);
+
+        const Array1 = Array.from(ul);
+        console.log(Array1); 
+       
+       
+        Array1.forEach(function(li){
+            console.log(li.innerText);
+        });
+
+        const allh4=document.getElementsByClassName('days');
+        console.log(allh4);
+
+        const Array2=Array.from(allh4);
+        console.log(Array2);
+
+    </script>
+</head>
+<body>
+    <h1>Welcome Shivansh Pandey</h1>
+    <h3>Days in a week</h3>
+    <ul type="disc">
+       <h4><li class="days">monday</li></h4> 
+        <h4><li class="days">tuesday</li></h4>
+        <h4><li class="days">wednesday</li></h4>
+        <h4><li class="days">thursday</li></h4>
+        <h4><li class="days">friday</li></h4>
+        <h4><li class="days">saturday</li></h4>
+        <h4><li class="days">sunday</li></h4>
+    </ul>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Select all <li> elements with class 'days'
+        const ul = document.getElementsByClassName('days');
+        console.log(ul);  // Logs the live HTMLCollection
+
+        // Convert HTMLCollection to an array
+        const Array1 = Array.from(ul);
+        console.log(Array1);  // Logs the array version of the HTMLCollection
+
+        // Log the inner text of each <li> element in the array
+        Array1.forEach(function(li) {
+            console.log(li.innerText);  // Logs the innerText of each <li> element
+        });
+
+        // Selecting all <li> elements again, but this part is redundant
+        const allh4 = document.getElementsByClassName('days');
+        console.log(allh4);  // Logs the live HTMLCollection again
+
+        // Convert it to an array and log it
+        const Array2 = Array.from(allh4);
+        console.log(Array2);  // Logs the array version again
+    </script>
+</head>
+<body>
+    <h1>Welcome Shivansh Pandey</h1>
+    <h3>Days in a week</h3>
+    <ul type="disc">
+        <li class="days">monday</li>
+        <li class="days">tuesday</li>
+        <li class="days">wednesday</li>
+        <li class="days">thursday</li>
+        <li class="days">friday</li>
+        <li class="days">saturday</li>
+        <li class="days">sunday</li>
+    </ul>
+</body>
+</html>

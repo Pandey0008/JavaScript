@@ -1,0 +1,66 @@
+<!-- //getElementsById()=>getElementById() method se hum id ke naam se element select kar sakte hain
+
+
+//getElementsByClassName()=>getElementsByClassName() method se hum class ke naam se element select kar sakte hain
+
+
+//getAttributes()=>getAttributes() method se hum element ke attributes ko access kar sakte hain
+
+//setAttributes()=>setAttributes() method se hum element ke attributes ko change kar sakte hain
+
+//innerHTML=>innerHTML property se hum element ke andar ka html content access kar sakte hain
+
+//innerText=>innerText property se hum element ke andar ka text access kar sakte hain
+
+
+//textContent=>textContent property se hum element ke andar ka text access kar sakte hain(css se hide kiya hua bhi show hoga)
+
+
+//htmlcollection=>htmlcollection ek array like object hota hai jisme element ke saare child elements hote hai jisko hum array me convert kar sakte hai Array.from() method ka use karke
+
+//nodeList=>nodeList ek array like object hota hai jise hum array ki tarah index value se access kar sakte hain
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent') // querySelector ka use karke class ya id se element select kar sakte hain
+
+
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    
+
+    console.log("NODES: ", parent.childNodes);
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+</head>
+<body style="background-color:black;color:white;">
+    <h1>Language Name</h1>
+    <ul type="disc" class="language"> 
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(lang){
+       const addlang = document.createElement('li');
+       addlang.innerHTML=`${lang}`;
+       document.querySelector(".language").appendChild(addlang);
+    }
+    addlanguage('Python');
+    addlanguage('Java');
+    addlanguage('C++');
+    addlanguage('C#');
+    function addOptiLanguage(lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('PHP');
+
+    const secondlang=document.querySelector('li:nth-child(6)');
+    const newli=document.createElement('li');
+    newli.textContent='Ruby';
+    secondlang.replaceWith(newli);
+</script>
+</html>
