@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <style>
+        .card {
+            /* Add shadows to create the "card" effect */
+            width: 500px;
+            height: 600px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+          }
+          </style>
+</head>
+<body style="background-color: #212121;">
+    <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%"></div>
+</body>
+<script>
+    const requestUrl="https://api.github.com/users/Pandey0008"
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl)
+    console.log("Here")
+    xhr.onreadystatechange= function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState===4){
+            const dataconverted=JSON.parse(this.responseText)//JSON.parse() method ka use karke hum string ko object me convert kar sakte hai
+
+
+            //console.log(typeof data)//string//=>jab bhi api se data aata hai to vo string me hota hai use hum JSON.parse method ka use karke hum string se object me convert kar skate hai
+            const data=this.responseText
+            console.log(data)
+            console.log(dataconverted.followers)
+            const photourl=(dataconverted.avatar_url)
+            console.log(photourl)
+            document.querySelector(".card").setAttribute("src" , `${dataconverted.photourl}`);
+        }
+    }
+    xhr.send()
+</script>
+</html>

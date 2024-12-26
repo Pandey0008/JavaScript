@@ -40,7 +40,9 @@
 
     //charCode=>charCode ka mtlb hai ki key ka character code
      
-    //
+    //setInterval(function,interval)=>JavaScript mein setInterval function ka use kisi bhi code ko ek specific interval par repeatedly execute karne ke liye kiya jata hai. Iska matlab hai ki aap kisi function ko ek fixed time period (milliseconds mein) ke baad bar-bar execute karne ke liye set kar sakte hain.
+
+    //setTimeout(function,delay)=>JavaScript mein setTimeout function ka use kisi bhi code ko ek specific time period ke baad execute karne ke liye kiya jata hai. Iska matlab hai ki aap ek function ko ek baar execute karne ke liye delay set kar sakte hain.
 
     // document.getElementById('images').addEventListener('click', function(e)//e is event object
     // {
