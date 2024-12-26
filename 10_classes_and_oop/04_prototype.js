@@ -1,33 +1,26 @@
 // let myName = "Shivansh     "
 // let mychannel = "chai     "
 
-// console.log(myName.trueLength);
-
-
+// console.log(myName.trueLength);8//=>true length aapko string ka original length batata hai extra spaces ko remove karke
 let myHeros = ["thor", "spiderman"]
-
 
 let heroPower = {
     thor: "hammer",
     spiderman: "sling",
-
     getSpiderPower: function(){
         console.log(`Spidy power is ${this.spiderman}`);
     }
 }
-
-Object.prototype.hitesh = function(){
+Object.prototype.Shivansh = function(){
     console.log(`Shivansh is present in all objects`);
 }
-
-Array.prototype.heyHitesh = function(){
-    console.log(`Shivanshh says hello`);
+Array.prototype.heyShivansh = function(){
+    console.log(`Shivansh says hello`);
 }
-
-// heroPower.Shivansh()
-// myHeros.Shivansh()
-// myHeros.heyShivansh()
-// heroPower.heyShivansh()
+heroPower.Shivansh()
+myHeros.Shivansh()
+myHeros.heyShivansh()
+//heroPower.heyShivansh()
 
 // inheritance
 
@@ -63,5 +56,5 @@ String.prototype.trueLength = function(){
 }
 
 anotherUsername.trueLength()
-"hitesh".trueLength()
+"Shivansh".trueLength()
 "iceTea".trueLength()
